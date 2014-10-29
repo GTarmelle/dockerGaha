@@ -15,7 +15,15 @@ def upload_file():
         f.save('./uploads/'+f.filename)
     return '',201
 @app.route('/uploads/files')
-def get_files():
+def show_files():
+    path = "/upload/"
+#get all subdirectories of uploads
+    directories = os.listdir(path)
+#show all files
+    allFiles = ""
+    for file in directories 
+    	allFiles += file + " " 
+    return allFiles
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
