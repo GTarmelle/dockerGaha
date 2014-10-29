@@ -1,9 +1,11 @@
 from flask import Flask
 from flask import request
+import os
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
+   #list all files
     return "Hello World!"
 
 @app.route('/upload', methods=['GET', 'POST'])
@@ -12,6 +14,9 @@ def upload_file():
         f = request.files['file']
         f.save('./uploads/'+f.filename)
     return '',201
+@app.route('/uploads/files')
+def get_files():
+
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
 #show the post with the giving int id
