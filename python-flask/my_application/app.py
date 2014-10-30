@@ -27,8 +27,8 @@ def euler_E1():
     sum = 0
     result = ""
     for i in range(1000):
-    if((i%3 == 0) or (i%5 == 0)):
-      sum += i
+      if((i%3 == 0) or (i%5 == 0)):
+        sum += i
     result = sum + "\n"
     return result
 
