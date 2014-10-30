@@ -22,7 +22,7 @@ def show_files():
     for file in directories:
     	allFiles += file + "\n" 
     return allFiles
-@app.route('euler1')
+@app.route('/euler1')
 def euler_E1():
     sum = 0
     for i in range(1000):
