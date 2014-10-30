@@ -16,7 +16,7 @@ def upload_file():
     return '',201
 @app.route('/files')
 def show_files():
-    path = "./upload/"
+    path = "./uploads/"
     directories = os.listdir(path)
     allFiles = ""
     for file in directories:
