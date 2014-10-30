@@ -26,9 +26,9 @@ def show_files():
 def euler_E1():
     sum = 0
     for i in range(1000):
-	if((i%3 ==0) or (i%5==0)):
-	   sum += i
-    return sum
+	     if((i%3 ==0) or (i%5==0)):
+	       sum += i
+    return sum +"\n"
 
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
