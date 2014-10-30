@@ -19,7 +19,7 @@ def show_files():
     path = "./upload/"
     directories = os.listdir(path)
     allFiles = ""
-    for file in directories 
+    for file in directories:
     	allFiles += file + "\n" 
     return allFiles
 
