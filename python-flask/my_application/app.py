@@ -14,12 +14,10 @@ def upload_file():
         f = request.files['file']
         f.save('./uploads/'+f.filename)
     return '',201
-@app.route('/uploads/files', methods=['GET', 'POST'])
+@app.route('/files'])
 def show_files():
-    path = "/upload/"
-#get all subdirectories of uploads
+    path = "./upload/"
     directories = os.listdir(path)
-#show all files
     allFiles = ""
     for file in directories 
     	allFiles += file + " " 
