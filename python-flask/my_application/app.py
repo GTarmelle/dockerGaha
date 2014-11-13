@@ -66,8 +66,7 @@ def queues():
   #
 
 
-  conn = boto.sqs.connect_to_region("us-east-1", aws_access_key_id='GKIAIR7EH3TNSTDUCWKH', aws_secret_access_key='P2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHE
-')
+  conn = boto.sqs.connect_to_region("us-east-1", aws_access_key_id='GKIAIR7EH3TNSTDUCWKH', aws_secret_access_key='P2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHE')
 
   rs = conn.get_all_queues()
   for q in rs:
