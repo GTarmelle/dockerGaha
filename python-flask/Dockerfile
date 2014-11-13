@@ -21,6 +21,9 @@ RUN apt-get install -y tar git curl nano wget dialog net-tools build-essential
 # Install Python and Basic Python Tools
 RUN apt-get install -y python python-dev python-distribute python-pip
 
+#install Boto
+pip install boto
+
 # Copy the application folder inside the container
 ADD /my_application /my_application
 
