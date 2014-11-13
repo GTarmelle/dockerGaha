@@ -68,16 +68,16 @@ def queues():
 
   conn = boto.sqs.connect_to_region("us-east-1", aws_access_key_id='GKIAIR7EH3TNSTDUCWKH', aws_secret_access_key='P2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHE')
 
-  rs = conn.get_all_queues()
-  for q in rs:
-          result += q.id + "\n"
+#  rs = conn.get_all_queues()
+#  for q in rs:
+#          result += q.id + "\n"
 
   #irland is in eu-west-1 region
-  myconn = boto.sqs.connect_to_region("eu-west-1", aws_access_key_id='GKIAIR7EH3TNSTDUCWKH', aws_secret_access_key='P2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHE')
+#  myconn = boto.sqs.connect_to_region("eu-west-1", aws_access_key_id='GKIAIR7EH3TNSTDUCWKH', aws_secret_access_key='P2FZT5mrLYy8gX7kS1q0p4ObQYXTwGnaiUm+rxHE')
 
-  rs = myconn.get_all_queues()
-  for q in rs:
-          result += q.id + "\n"
+#  rs = myconn.get_all_queues()
+#  for q in rs:
+#          result += q.id + "\n"
 
   return result
 
